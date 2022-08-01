@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Robin</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="slide_menu">
+    <div>
+      <ul class="items">
+        <li><a class="menu__topics" href="#projects">Portfolio</a></li>
+        <li><a class="menu__topics" href="#about-me">About</a></li>
+        <li><a class="menu__topics" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div><a href="#" class="cls">&times;</a></div>
+  </div>
+  <header>
+    <div class="header__links">
+      <a class="logo" href="#">Robin</a>
+    </div>
+    <nav>
+      <a class="menu" href="#"><img src="./icons/hamburger.png" alt="hamburger menu"></a>
+      <ul class="menu__list">
+        <li class="menu__list-item"><a href="#projects">Portfolio</a></li>
+        <li class="menu__list-item"><a href="#about-me">About</a></li>
+        <li class="menu__list-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="cover">
+      <h1>I’m Robin<br>Glad to see you!</h1>
+      <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+        experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <h2 class="cover__subtitle">LET’S CONNECT</h2>
+      <ul class="cover__icons">
+        <li><a href="@MecanicoRobin"><img src="./icons/twitter.svg" alt="twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/robin-benitez-mora-manizales/"><img src="./icons/linkdin.svg"
+              alt="linkedIn"></a></li>
+        <li><a href="#"><img src="./icons/media.svg" alt="media"></a></li>
+        <li><a href="https://github.com/robinbenitezmora"><img src="./icons/github.svg" alt="github"></a></li>
+        <li><a href="#"><img src="./icons/rabbit.svg" alt="rabbit"></a></li>
+      </ul>
+    </section>
+    <section class="projects" id="projects">
+      <section class="card1">
+        <section class="card1__area">
+          <div class="card1__pictures">
+            <img class="card1__image1" src="./images/mobil-card1.svg" alt="card1 image1">
+            <img class="card1__image2" src="./images/desktop-card1.svg" alt="card1 image2">
+          </div>
+          <div class="card1__article">
+            <div class="card1__text">
+              <h2 class="card1__text-title">Tonic</h2>
+              <div class="card1__text-list">
+                <h4 class="card1__text-item1">CANOPY</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h4 class="card1__text-item2">Back End Dev</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h5 class="card1__text-item2">2015</h5>
+              </div>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            </div>
+            <div class="buttons">
+              <ul class="buttons__languages">
+                <li class="buttons__technology buttons__languages-text">html</li>
+                <li class="buttons__technology buttons__languages-text">css</li>
+                <li class="buttons__technology buttons__languages-text">javaScript</li>
+              </ul>
+              <a class="buttons__main buttons__text" onclick="openModal(0)">See Project</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="card2">
+        <section class="card1__area">
+          <div class="card2__pictures">
+            <img class="card1__image1" src="./images/card2.svg" alt="card2 image1">
+            <img class="card1__image2" src="./images/card4.svg" alt="card2 image2">
+          </div>
+          <div class="card2__article">
+            <div class="card1__text">
+              <h2 class="card1__text-title">Multi-Post <br>Stories</h2>
+              <div class="card1__text-list">
+                <h4 class="card1__text-item1">CANOPY</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h4 class="card1__text-item2">Back End Dev</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h5 class="card1__text-item2">2015</h5>
+              </div>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            </div>
+            <div class="buttons">
+              <div class="buttons__languages">
+                <div class="buttons__technology buttons__languages-text">html</div>
+                <div class="buttons__technology buttons__languages-text">css</div>
+                <div class="buttons__technology buttons__languages-text">javaScript</div>
+              </div>
+              <a class="buttons__main buttons__text" onclick="openModal(1)">See Project</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="card3">
+        <section class="card1__area">
+          <div class="card1__pictures">
+            <img class="card1__image1" src="./images/card3.svg" alt="flexible woman image">
+            <img class="card1__image2" src="./images/mobil-card1.svg" alt="card1 image2">
+          </div>
+          <div class="card1__article">
+            <div class="card1__text">
+              <h2 class="card1__text-title">Tonic</h2>
+              <div class="card1__text-list">
+                <h4 class="card1__text-item1">CANOPY</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h4 class="card1__text-item2">Back End Dev</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h5 class="card1__text-item2">2015</h5>
+              </div>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            </div>
+            <div class="buttons">
+              <div class="buttons__languages">
+                <div class="buttons__technology buttons__languages-text">html</div>
+                <div class="buttons__technology buttons__languages-text">css</div>
+                <div class="buttons__technology buttons__languages-text">javaScript</div>
+              </div>
+              <a class="buttons__main buttons__text" onclick="openModal(2)">See Project</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="card4">
+        <section class="card1__area">
+          <div class="card2__pictures">
+            <img class="card1__image1" src="./images/card4.svg" alt="A collage image">
+            <img class="card1__image2" src="./images/card2.svg" alt="card1 image2">
+          </div>
+          <div class="card2__article">
+            <div class="card1__text">
+              <h2 class="card1__text-title">Multi-Post<br>Stories</h2>
+              <div class="card1__text-list">
+                <h4 class="card1__text-item1">CANOPY</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h4 class="card1__text-item2">Back End Dev</h4>
+                <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+                <h5 class="card1__text-item2">2015</h5>
+              </div>
+              <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            </div>
+            <div class="buttons">
+              <div class="buttons__languages">
+                <div class="buttons__technology buttons__languages-text">html</div>
+                <div class="buttons__technology buttons__languages-text">css</div>
+                <div class="buttons__technology buttons__languages-text">javaScript</div>
+              </div>
+              <a class="buttons__main buttons__text" onclick="openModal(3)">See Project</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="about-me" id="about-me">
+      <div class="about-me__text">
+        <h2 class="about-me__text-title">About<br>Myself</h2>
+        <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my
+          work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+        <h2 class="cover__subtitle">LET’S CONNECT</h2>
+        <ul class="cover__icons">
+          <li><a href="#"><img src="./icons/github.svg" alt="github"></a></li>
+          <li><a href="#"><img src="./icons/linkdin.svg" alt="linkedIn"></a></li>
+          <li><a href="#"><img src="./icons/rabbit.svg" alt="rabbit"></a></li>
+          <li><a href="#"><img src="./icons/twitter.svg" alt="twitter"></a></li>
+          <li><a href="#"><img src="./icons/media.svg" alt="media"></a></li>
+        </ul>
+        <a href="#" class="about-me__text-button">Get my resume</a>
+      </div>
+      <div class="about-me__skills">
+        <div class="about-me__skills-items">
+          <div class="about-me__skills-language">
+            <h3 class="about-me__skills-text">Languages</h3>
+            <img class="about-me__deploy" src="./images/deploy.png" alt="deploy symbol">
+          </div>
+          <div class="about-me__languages">
+            <div class="about-me__skills-tag">
+              <img src="./icons/javascript.svg" alt="javascript">
+              <span>JavaScript</span>
+            </div>
+            <div class="about-me__skills-tag">
+              <img class="sixht-sheet__developer-language-img" src="./icons/html.svg" alt="html">
+              <span>HTML</span>
+            </div>
+            <div class="about-me__skills-tag">
+              <img class="sixht-sheet__developer-language-img" src="./icons/css.svg" alt="css">
+              <span>CSS</span>
+            </div>
+          </div>
+          <div class="about-me__skills-language">
+            <h3 class="about-me__skills-text">Frameworks</h3>
+            <img class="about-me__deploy" src="./images/deploy-right.png" alt="deploy right">
+          </div>
+          <div class="about-me__skills-language">
+            <h3 class="about-me__skills-text">Skills</h3>
+            <img class="about-me__deploy" src="./images/deploy-right.png" alt="deploy rigth">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulary" id="contact">
+      <h2 class="formulary__title">Contact me</h2>
+      <p class="formulary__paragraph">If you have an application you are interested in developing, a feature that you
+        need built or a project that needs coding. I’d love to help with it </p>
+      <img class="formulary__image1" src="./images/form-shapes-mobile@2x.svg" alt="backgroung form">
+      <img class="formulary__image2" src="./images/contact-form-shapes-desktop.svg" alt="backgroung form">
+      <form action="https://formspree.io/f/xeqnpkpe" id="form" class="form" method="post">
+        <label for="name">
+          <input class="formulary__input formulary__input-text" name="name" type="text" id="name" maxlength="30" placeholder="Your name" required>
+        </label>
+        <label for="email">
+          <input class="formulary__input formulary__input-text" name="email" type="email" id="email" maxlength="30" placeholder="user_name@mail.com" required>
+        </label>
+        <textarea class="formulary__input formulary__input-text formulary__message-area" name="message-area" id="message-area" maxlength="500" placeholder="Write your message" required></textarea>
+        <p id="email-error" class="error-message">Your email should be written in lower case.</p>
+        <button type="submit" class="formulary__btn formulary__btn-text">Get It Touch</button>
+        <div class="end-line"><img src="./images/end-line.png" alt="end-line"></div>
+      </form>
+    </section>
+    <section class="modal" id="modal">
+      <div class="modal-mobile" id="modal-content">
+        <div class="modal__header">
+          <h2 class="card1__text-title" id="modal-title">Tonic</h2>
+          <a href="javascript:void(0)" class="btn-close" onclick="closeModal()">&times;</a>
+        </div>
+        <div class="card1__text">
+          <div class="card1__text-list">
+            <h4 class="card1__text-item1">CANOPY</h4>
+            <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+            <h4 class="card1__text-item2">Back End Dev</h4>
+            <img class="card1__text-dot" src="./images/dot.png" alt="dot">
+            <h5 class="card1__text-item2">2015</h5>
+          </div>
+        </div>
+        <img class="modal__image-desktop" id="modal-image-desktop" src="./images/modal-desktop.png" alt="big picture">
+        <img class="modal__image-mobile" id="modal-image-mobile" src="./images/card1.svg" alt="big picture">
+        <div class="modal__text">
+          <p class="paragraph" id="modal-description"></p>
+          <div class="modal__text-buttons">
+            <ul class="modal__tech1" id="modal-technologies">
+              <li class="badget">html</li>
+              <li class="badget">css</li>
+              <li class="badget">javascript</li>
+            </ul>
+            <ul class="modal__tech2">
+              <li class="badget">github</li>
+              <li class="badget">ruby</li>
+              <li class="badget">Bootstrap</li>
+            </ul>
+            <div class="buttons-link">
+              <a class="btn" id="modal-see-live">See live<span><img src="./icons/export.png" alt="export"></span></a>
+              <a class="btn" id="modal-see-source">See Source<span><img src="./icons/github.png" alt="github"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
