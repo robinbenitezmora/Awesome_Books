@@ -22,7 +22,7 @@ class InterfaceUser {
     const validataLocalStorage = JSON.parse(localStorage.getItem('List'));
     const parseObjt = validataLocalStorage;
     if (parseObjt != null) {
-      for (let k = 0; k < parseObjt.length; k+=1) {
+      for (let k = 0; k < parseObjt.length; k += 1) {
         books.push(parseObjt[k]);
       }
     }
@@ -87,7 +87,7 @@ function loadColors() {
   const changeColor = document.getElementsByClassName('title');
   console.log('Si');
 
-  for (let l = 0; l < changeColor.length; l+=1) {
+  for (let l = 0; l < changeColor.length; l += 1) {
     if (l % 2 === 0) {
       changeColor[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
@@ -100,7 +100,7 @@ function loadColor() {
   const changeColors = document.getElementsByClassName('book');
   console.log('Si');
 
-  for (let l = 0; l < changeColors.length; l+=1) {
+  for (let l = 0; l < changeColors.length; l += 1) {
     if (l % 2 === 0) {
       changeColors[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
