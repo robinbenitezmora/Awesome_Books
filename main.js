@@ -21,6 +21,13 @@ class InterfaceUser {
         author: 'Andy Weir',
       },
     ];
+    let validataLocalStorage = JSON.parse(localStorage.getItem('List'));
+    let parseObjt = validataLocalStorage;
+    if(parseObjt != null) {
+      for (let k = 0; k < parseObjt.length; k++) {
+        books.push(parseObjt[k]);
+      }
+    }
     books.forEach((book) => { InterfaceUser.addBookToLibrary(book); });
   }
 
@@ -30,7 +37,7 @@ class InterfaceUser {
 
     row.innerHTML = `
       <div class='book'>
-        <div class="title">'${book.title}' ${'by'} ${book.author}</div>
+        <div class="title">"${book.title}" ${'by'} ${book.author}</div>
         <div><button href="#" class='delete'>Remove</button></div><hr>
       </div>
     `;
@@ -60,7 +67,15 @@ document.getElementById('books__add').addEventListener('submit', (e) => {
   if (title === '' || author === '') {
     alert('Please fill in all fields');
   } else {
-    const book = new Library(title, author);
+    let book = new Library(title, author);
+    let getDataLocalStorage = localStorage.getItem('List');
+      if(getDataLocalStorage !== null) {
+        let validationStorage = JSON.parse(localStorage.getItem('List'));
+        localStorage.setItem('List', JSON.stringify(validationStorage.concat(book)));
+      } else {
+        var arrSetItem = [book]; //Create ARRAY
+        localStorage.setItem('List', JSON.stringify(arrSetItem));
+      }
     InterfaceUser.addBookToLibrary(book);
     InterfaceUser.clearFields();
   }
@@ -69,3 +84,33 @@ document.getElementById('books__add').addEventListener('submit', (e) => {
 document.getElementById('book_list').addEventListener('click', (e) => {
   InterfaceUser.deleteBook(e.target);
 });
+
+document.addEventListener('DOMContentLoaded', loadColors);
+document.addEventListener('DOMContentLoaded', loadColor);
+
+
+function loadColors() {
+  let changeColor = document.getElementsByClassName('title');
+  console.log("Si")
+
+  for(let l = 0; l < changeColor.length; l++) {
+    if (l % 2 === 0) {
+      changeColor[l].style.backgroundColor = "rgba(221, 221 ,221)";
+    } else {
+      changeColor[l].style.backgroundColor = "rgba(255, 255 ,255)";
+    }
+  }
+}
+
+function loadColor() {
+  let changeColors = document.getElementsByClassName('book');
+  console.log("Si")
+
+  for(let l = 0; l < changeColors.length; l++) {
+    if (l % 2 === 0) {
+      changeColors[l].style.backgroundColor = "rgba(221, 221 ,221)";
+    } else {
+      changeColors[l].style.backgroundColor = "rgba(255, 255 ,255)";
+    }
+  }
+}
