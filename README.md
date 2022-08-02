@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Robin's Portfolio
+# Awesome Books
 
 >
-This portfolio shows my achievements and what I have been able to develop thanks to my abilities by designing products in programming. If you have a new project and need code it, feel free to contact me.
+This project is a basic website that allows users to add and delete books from a group or list using JavaScript objects, storage and arrays.
 
 ## Built With
 
@@ -15,17 +15,17 @@ This portfolio shows my achievements and what I have been able to develop thanks
 
 
 ### Install
-Feel free to clone the repository at this URL: https://github.com/robinbenitezmora/Portfolio-Robin-Benitez
+Feel free to clone the repository at this URL: https://github.com/robinbenitezmora/Awesome_Books
 
 Any suggestion is welcome.
 
 ## Authors
 
- **Robin Benitez Mora**
+ **Robin Benitez Mora and**
+
+   **Armando Comellas**
 
 GitHub: https://github.com/robinbenitezmora
-
-GitHub Pages Deployed: https://robinbenitezmora.github.io/Portfolio-Robin-Benitez/
 
 LinkedIn: https://www.linkedin.com/in/robin-benitez-mora-manizales/
 
@@ -37,9 +37,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--I thank Microverse for allowing me to use their template.
+-I thank Microverse for its documentation.
 
--Thanks to my coding partner Promise Ukay for helping with your good advices to correct my code in this code review.
+-Thanks to my coding partner Armando Comellas for helping with your good support in this project.
 
 ## 📝 License
 

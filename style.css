@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -68,7 +62,7 @@ form {
   padding-left: 20px;
 }
 
-.delete{
+.delete {
   cursor: pointer;
   box-shadow: 5px 5px 5px #222;
   margin-right: 20px;
