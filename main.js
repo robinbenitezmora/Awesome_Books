@@ -1,8 +1,6 @@
-class Library {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
+function Library(title, author) {
+  this.title = title;
+  this.author = author;
 }
 
 class InterfaceUser {
@@ -24,7 +22,7 @@ class InterfaceUser {
     const validataLocalStorage = JSON.parse(localStorage.getItem('List'));
     const parseObjt = validataLocalStorage;
     if (parseObjt != null) {
-      for (let k = 0; k < parseObjt.length; k++) {
+      for (let k = 0; k < parseObjt.length; k+=1) {
         books.push(parseObjt[k]);
       }
     }
@@ -85,14 +83,11 @@ document.getElementById('book_list').addEventListener('click', (e) => {
   InterfaceUser.deleteBook(e.target);
 });
 
-document.addEventListener('DOMContentLoaded', loadColors);
-// document.addEventListener('DOMContentLoaded', loadColor);
-
 function loadColors() {
   const changeColor = document.getElementsByClassName('title');
   console.log('Si');
 
-  for (let l = 0; l < changeColor.length; l++) {
+  for (let l = 0; l < changeColor.length; l+=1) {
     if (l % 2 === 0) {
       changeColor[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
@@ -105,7 +100,7 @@ function loadColor() {
   const changeColors = document.getElementsByClassName('book');
   console.log('Si');
 
-  for (let l = 0; l < changeColors.length; l++) {
+  for (let l = 0; l < changeColors.length; l+=1) {
     if (l % 2 === 0) {
       changeColors[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
@@ -113,3 +108,6 @@ function loadColor() {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', loadColors);
+document.addEventListener('DOMContentLoaded', loadColor);
