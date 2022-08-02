@@ -21,9 +21,9 @@ class InterfaceUser {
         author: 'Andy Weir',
       },
     ];
-    let validataLocalStorage = JSON.parse(localStorage.getItem('List'));
-    let parseObjt = validataLocalStorage;
-    if(parseObjt != null) {
+    const validataLocalStorage = JSON.parse(localStorage.getItem('List'));
+    const parseObjt = validataLocalStorage;
+    if (parseObjt != null) {
       for (let k = 0; k < parseObjt.length; k++) {
         books.push(parseObjt[k]);
       }
@@ -67,15 +67,15 @@ document.getElementById('books__add').addEventListener('submit', (e) => {
   if (title === '' || author === '') {
     alert('Please fill in all fields');
   } else {
-    let book = new Library(title, author);
-    let getDataLocalStorage = localStorage.getItem('List');
-      if(getDataLocalStorage !== null) {
-        let validationStorage = JSON.parse(localStorage.getItem('List'));
-        localStorage.setItem('List', JSON.stringify(validationStorage.concat(book)));
-      } else {
-        var arrSetItem = [book]; //Create ARRAY
-        localStorage.setItem('List', JSON.stringify(arrSetItem));
-      }
+    const book = new Library(title, author);
+    const getDataLocalStorage = localStorage.getItem('List');
+    if (getDataLocalStorage !== null) {
+      const validationStorage = JSON.parse(localStorage.getItem('List'));
+      localStorage.setItem('List', JSON.stringify(validationStorage.concat(book)));
+    } else {
+      const arrSetItem = [book];
+      localStorage.setItem('List', JSON.stringify(arrSetItem));
+    }
     InterfaceUser.addBookToLibrary(book);
     InterfaceUser.clearFields();
   }
@@ -86,31 +86,30 @@ document.getElementById('book_list').addEventListener('click', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', loadColors);
-document.addEventListener('DOMContentLoaded', loadColor);
-
+// document.addEventListener('DOMContentLoaded', loadColor);
 
 function loadColors() {
-  let changeColor = document.getElementsByClassName('title');
-  console.log("Si")
+  const changeColor = document.getElementsByClassName('title');
+  console.log('Si');
 
-  for(let l = 0; l < changeColor.length; l++) {
+  for (let l = 0; l < changeColor.length; l++) {
     if (l % 2 === 0) {
-      changeColor[l].style.backgroundColor = "rgba(221, 221 ,221)";
+      changeColor[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
-      changeColor[l].style.backgroundColor = "rgba(255, 255 ,255)";
+      changeColor[l].style.backgroundColor = 'rgba(255, 255 ,255)';
     }
   }
 }
 
 function loadColor() {
-  let changeColors = document.getElementsByClassName('book');
-  console.log("Si")
+  const changeColors = document.getElementsByClassName('book');
+  console.log('Si');
 
-  for(let l = 0; l < changeColors.length; l++) {
+  for (let l = 0; l < changeColors.length; l++) {
     if (l % 2 === 0) {
-      changeColors[l].style.backgroundColor = "rgba(221, 221 ,221)";
+      changeColors[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
-      changeColors[l].style.backgroundColor = "rgba(255, 255 ,255)";
+      changeColors[l].style.backgroundColor = 'rgba(255, 255 ,255)';
     }
   }
 }
