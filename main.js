@@ -30,7 +30,7 @@ class InterfaceUser {
     let res = 0;
     books.forEach((book) => {
       InterfaceUser.addBookToLibrary(book, res);
-      res ++;
+      res += 1;
     });
   }
 
