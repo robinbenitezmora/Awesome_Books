@@ -38,7 +38,7 @@ class InterfaceUser {
     if (res !== undefined) {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
-      let stringAdd = 'elem_';
+      const stringAdd = 'elem_';
       row.innerHTML = `
       <div class='book ${stringAdd + res}'>
         <div class="title">"${book.title}" ${'by'} ${book.author}</div>
