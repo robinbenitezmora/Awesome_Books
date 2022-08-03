@@ -38,8 +38,9 @@ class InterfaceUser {
     if (res !== undefined) {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
+      let stringAdd = 'elem_';
       row.innerHTML = `
-      <div class='book elem_${res}>
+      <div class='book ${stringAdd + res}'>
         <div class="title">"${book.title}" ${'by'} ${book.author}</div>
         <div><button href="#" class='delete'>Remove</button></div><hr>
       </div>
