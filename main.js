@@ -43,8 +43,6 @@ class InterfaceUser {
     library.appendChild(row);
   }
 
-
-
   static clearFields() {
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
@@ -81,7 +79,6 @@ document.getElementById('book_list').addEventListener('click', (e) => {
 
 function loadColors() {
   const changeColor = document.getElementsByClassName('title');
-  console.log('Si');
 
   for (let l = 0; l < changeColor.length; l += 1) {
     if (l % 2 === 0) {
@@ -94,7 +91,6 @@ function loadColors() {
 
 function loadColor() {
   const changeColors = document.getElementsByClassName('book');
-  console.log('Si');
 
   for (let l = 0; l < changeColors.length; l += 1) {
     if (l % 2 === 0) {
