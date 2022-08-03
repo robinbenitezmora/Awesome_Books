@@ -1,4 +1,3 @@
-/*eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }]*/
 function Library(title, author, countElemt) {
   this.title = title;
   this.author = author;
@@ -31,7 +30,7 @@ class InterfaceUser {
     let res = 0;
     books.forEach((book) => {
       InterfaceUser.addBookToLibrary(book, res);
-      res++;
+      res ++;
     });
   }
 
