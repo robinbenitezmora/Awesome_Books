@@ -1,7 +1,7 @@
 function Library(title, author, countElemt) {
   this.title = title;
   this.author = author;
-  this.countElemt = 'elem_' + countElemt;
+  this.countElemt = `elem` + countElemt;
 }
 
 class InterfaceUser {
