@@ -65,7 +65,7 @@ class InterfaceUser {
       let catchaName = element.parentElement.parentElement.className;
       catchaName = catchaName.split(' ');
       const myArrayIs = new Array();
-      myArrayIs[0] = myArrayIs;
+      myArrayIs[0] = catchaName;
       let compareName = myArrayIs;
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
 
