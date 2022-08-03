@@ -103,3 +103,22 @@ function loadColor() {
 
 document.addEventListener('DOMContentLoaded', loadColors);
 document.addEventListener('DOMContentLoaded', loadColor);
+
+// Library with Navigation
+const loadList = document.getElementById('list');
+loadList.addEventListener('click', () => {
+  document.getElementById('book_list').style.display = 'block';
+});
+
+const addBook = document.getElementById('add-book');
+addBook.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'none';
+  document.getElementById('books__add').style.display = 'block';
+});
+
+const loadContact = document.getElementById('contact');
+loadContact.addEventListener('click', () => {
+  document.getElementById('books__add').style.display = 'none';
+  document.querySelector('.contact').style.display = 'block';
+});
+
