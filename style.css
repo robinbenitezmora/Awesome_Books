@@ -1,6 +1,25 @@
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(34, 30, 30);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .divide {
@@ -19,9 +38,7 @@ header {
 }
 
 section {
-  border-top: 2px solid #222;
-  border-left: 2px solid #222;
-  border-right: 2px solid #222;
+  border: 2px solid #222;
 }
 
 #book_list {
@@ -37,8 +54,10 @@ h2 {
 form {
   display: none;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin: 2rem 0;
 }
 
 .data {

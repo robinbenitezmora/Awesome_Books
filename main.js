@@ -107,18 +107,22 @@ document.addEventListener('DOMContentLoaded', loadColor);
 // Library with Navigation
 const loadList = document.getElementById('list');
 loadList.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'none';
+  document.getElementById('books__add').style.display = 'none';
   document.getElementById('book_list').style.display = 'block';
 });
 
 const addBook = document.getElementById('add-book');
 addBook.addEventListener('click', () => {
   document.querySelector('.contact').style.display = 'none';
-  document.getElementById('books__add').style.display = 'block';
+  document.getElementById('books__add').style.display = 'flex';
+  document.getElementById('book_list').style.display = 'none';
 });
 
 const loadContact = document.getElementById('contact');
 loadContact.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'flex';
   document.getElementById('books__add').style.display = 'none';
-  document.querySelector('.contact').style.display = 'block';
+  document.getElementById('book_list').style.display = 'none';
 });
 
