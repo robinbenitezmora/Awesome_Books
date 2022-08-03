@@ -112,7 +112,6 @@ document.getElementById('books__add').addEventListener('submit', (e) => {
     alert('Please fill in all fields');
   } else {
     let countElemt = document.getElementsByTagName('section').length - 1;
-    countElemt = countElemt;
     const book = new Library(title, author, countElemt);
     InterfaceUser.addBookToLibrary(book, countElemt);
     const getDataLocalStorage = localStorage.getItem('List');
