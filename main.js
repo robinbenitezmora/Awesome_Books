@@ -38,9 +38,8 @@ class InterfaceUser {
     if (res !== undefined) {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
-      const stringAdd = 'elem_';
       row.innerHTML = `
-      <div class='book ${stringAdd + res}'>
+      <div class='book ${'elem_' + res}'>
         <div class="title">"${book.title}" ${'by'} ${book.author}</div>
         <div><button href="#" class='delete'>Remove</button></div><hr>
       </div>
@@ -49,9 +48,8 @@ class InterfaceUser {
     } else {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
-      const stringAddTwo = 'elem_';
       row.innerHTML = `
-        <div class='book ${stringAddTwo + res}'>
+        <div class='book ${'elem_' + res}'>
           <div class="title">"${book.title}" ${'by'} ${book.author}</div>
           <div><button href="#" class='delete'>Remove</button></div><hr>
         </div>
@@ -62,11 +60,10 @@ class InterfaceUser {
 
   static deleteBook(element) {
     if (element.classList.contains('delete')) {
-      let catchaName = element.parentElement.parentElement.className;
+      var catchaName = element.parentElement.parentElement.className;
       catchaName = catchaName.split(' ');
-      const myArrayIs = new Array();
-      myArrayIs[0] = catchaName;
-      let compareName = myArrayIs;
+      catchaName = catchaName[1];
+      let compareName = catchaName;
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
 
       if (compareName === 'elem_0' || compareName === 'elem_1' || compareName === 'elem_2') {
@@ -77,7 +74,7 @@ class InterfaceUser {
           for (let i = 0; i < loadLocalStore.length; i++) {
             let checkValue = loadLocalStore[i].countElemt;
             let selectRight = loadLocalStore[i];
-            if (myArrayIs !== checkValue) {
+            if (catchaName !== checkValue) {
               arrayIs.push(selectRight);
               localStorage.setItem('List', JSON.stringify(arrayIs));
             } else {
@@ -87,7 +84,7 @@ class InterfaceUser {
       } else {
         let loadLocalStoreSnd = JSON.parse(localStorage.getItem('List'));
         let oneElement = loadLocalStoreSnd[0].countElemt;
-          if(myArrayIs === oneElement) {
+          if(catchaName === oneElement) {
             var arrayEmpty = [];
             localStorage.setItem('List', JSON.stringify(arrayEmpty));
           }
