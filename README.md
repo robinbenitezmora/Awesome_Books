@@ -37,7 +37,7 @@ If you want to clone this project:
 - Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
 
 ### Install
-- No install required
+- Feel free to clone the repository at this URL: https://github.com/robinbenitezmora/Awesome_Books
 
 ### Usage
 - Make changes to javascript and html files then submit pull requests
