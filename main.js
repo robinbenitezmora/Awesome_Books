@@ -1,3 +1,4 @@
+/*eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }]*/
 function Library(title, author, countElemt) {
   this.title = title;
   this.author = author;
