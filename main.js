@@ -63,8 +63,10 @@ class InterfaceUser {
   static deleteBook(element) {
     if (element.classList.contains('delete')) {
       let catchaName = element.parentElement.parentElement.className;
-      catchaName = catchaName.split(' ')[1];
-      let compareName = catchaName;
+      catchaName = catchaName.split(' ');
+      const myArrayIs = new Array();
+      myArrayIs[0] = myArrayIs;
+      let compareName = myArrayIs;
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
 
       if (compareName === 'elem_0' || compareName === 'elem_1' || compareName === 'elem_2') {
@@ -75,7 +77,7 @@ class InterfaceUser {
           for (let i = 0; i < loadLocalStore.length; i++) {
             let checkValue = loadLocalStore[i].countElemt;
             let selectRight = loadLocalStore[i];
-            if (catchaName !== checkValue) {
+            if (myArrayIs !== checkValue) {
               arrayIs.push(selectRight);
               localStorage.setItem('List', JSON.stringify(arrayIs));
             } else {
@@ -85,7 +87,7 @@ class InterfaceUser {
       } else {
         let loadLocalStoreSnd = JSON.parse(localStorage.getItem('List'));
         let oneElement = loadLocalStoreSnd[0].countElemt;
-          if(catchaName === oneElement) {
+          if(myArrayIs === oneElement) {
             var arrayEmpty = [];
             localStorage.setItem('List', JSON.stringify(arrayEmpty));
           }
