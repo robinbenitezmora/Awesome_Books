@@ -1,7 +1,7 @@
 function Library(title, author, countElemt) {
   this.title = title;
   this.author = author;
-  this.countElemt = `elem ${countElemt}`;
+  this.countElemt = `elem_${countElemt}`;
 }
 
 class InterfaceUser {
@@ -63,22 +63,31 @@ class InterfaceUser {
       var catchaName = element.parentElement.parentElement.className;
       catchaName = catchaName.split(' ');
       catchaName = catchaName[1];
+      let compareName = catchaName;
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
-      if (getLocalStorage !== null && getLocalStorage.length) {
-        let loadLocalStore = JSON.parse(localStorage.getItem('List'));
-        var arrayIs = [];
-        for (let i = 0; i < loadLocalStore.length; i++) {
-          let checkValue = loadLocalStore[i].countElemt;
-          let selectRight = loadLocalStore[i];
-          if (catchaName !== checkValue) {
-            arrayIs.push(selectRight);
-            localStorage.setItem('List', JSON.stringify(arrayIs));
-          } else {
-            element.parentElement.parentElement.remove();
-          }
-        }
 
+      if (compareName === 'elem_0' || compareName === 'elem_1' || compareName === 'elem_2') {
+        element.parentElement.parentElement.remove();
+      } else if (getLocalStorage !== null && getLocalStorage.length > 1) {
+          let loadLocalStore = JSON.parse(localStorage.getItem('List'));
+          var arrayIs = [];
+          for (let i = 0; i < loadLocalStore.length; i++) {
+            let checkValue = loadLocalStore[i].countElemt;
+            let selectRight = loadLocalStore[i];
+            if (catchaName !== checkValue) {
+              arrayIs.push(selectRight);
+              localStorage.setItem('List', JSON.stringify(arrayIs));
+            } else {
+              element.parentElement.parentElement.remove();
+            }
+          }
       } else {
+        let loadLocalStoreSnd = JSON.parse(localStorage.getItem('List'));
+        let oneElement = loadLocalStoreSnd[0].countElemt;
+          if(catchaName === oneElement) {
+            var arrayEmpty = [];
+            localStorage.setItem('List', JSON.stringify(arrayEmpty));
+          }
         element.parentElement.parentElement.remove();
       }
     }
@@ -123,14 +132,10 @@ document.getElementById('book_list').addEventListener('click', (e) => {
 
 function loadColor() {
   const changeColors = document.getElementsByClassName('book');
-  console.log(changeColors.length);
   for (let l = 0; l < changeColors.length; l++) {
     if (l % 2 === 0) {
-      console.log("cond_" + l);
       changeColors[l].style.backgroundColor = 'rgba(221, 221 ,221)';
     } else {
-      console.log("cond2_" + l);
-
       changeColors[l].style.backgroundColor = 'rgba(255, 255 ,255)';
     }
   }
