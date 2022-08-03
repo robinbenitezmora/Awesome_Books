@@ -35,16 +35,16 @@ class InterfaceUser {
   }
 
   static addBookToLibrary(book, res) {
-    if(res !== undefined) {
-    const library = document.getElementById('book_list');
-    const row = document.createElement('section');
-    row.innerHTML = `
+    if (res !== undefined) {
+      const library = document.getElementById('book_list');
+      const row = document.createElement('section');
+      row.innerHTML = `
       <div class='book ${'elem_' + res}'>
         <div class="title">"${book.title}" ${'by'} ${book.author}</div>
         <div><button href="#" class='delete'>Remove</button></div><hr>
       </div>
     `;
-    library.appendChild(row);
+      library.appendChild(row);
     } else {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
@@ -64,13 +64,13 @@ class InterfaceUser {
       catchaName = catchaName.split(' ');
       catchaName = catchaName[1];
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
-      if(getLocalStorage !== null && getLocalStorage.length) {
+      if (getLocalStorage !== null && getLocalStorage.length) {
         let loadLocalStore = JSON.parse(localStorage.getItem('List'));
         var arrayIs = [];
-        for(let i = 0; i < loadLocalStore.length; i++) {
+        for (let i = 0; i < loadLocalStore.length; i++) {
           let checkValue = loadLocalStore[i].countElemt;
           let selectRight = loadLocalStore[i];
-          if(catchaName !== checkValue) {
+          if (catchaName !== checkValue) {
             arrayIs.push(selectRight);
             localStorage.setItem('List', JSON.stringify(arrayIs));
           } else {
