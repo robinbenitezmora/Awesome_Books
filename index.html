@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Awesome Books</title>
+</head>
+<body>
+  <header>
+    <h2>All Awesome Books</h2>
+  </header>
+  <div class="unique">
+    <section id="book_list"></section>
+    <hr class="divide">
+    <h2>Add a New Book </h2>
+  </div>
+  <main>
+    <form action="/" id="books__add">
+      <label for="title">
+        <input class="data" type="text" id="title" name="title" placeholder="Title" required>
+      </label>
+      <label for="author">
+        <input class="data" type="text" id="author" name="author" placeholder="Author" required>
+      </label>
+      <label for="add" class="add">
+        <input type="submit" value="Add" id="add">
+      </label>
+    </form>
+  </main>
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

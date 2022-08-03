@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.divide {
+  width: 100px;
+  height: 1px;
+  background-color: #222;
+  margin-top: 20px;
+  margin-left: 630px;
+  box-shadow: 5px 5px 5px #222;
+}
+
+.unique {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  border-top: 2px solid #222;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#book_list {
+  border-bottom: 4px solid #222;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.data {
+  width: 15rem;
+  height: 1rem;
+  border: 3px solid #222;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  font-size: 1rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.delete {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #222;
+  margin-right: 20px;
+}
+
+.add {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 15rem;
+}
+
+.add input {
+  box-shadow: 5px 5px 5px #222;
+}
