@@ -49,8 +49,9 @@ class InterfaceUser {
     } else {
       const library = document.getElementById('book_list');
       const row = document.createElement('section');
+      const stringAddTwo = 'elem_';
       row.innerHTML = `
-        <div class='book ${'elem_' + res}'>
+        <div class='book ${stringAddTwo + res}'>
           <div class="title">"${book.title}" ${'by'} ${book.author}</div>
           <div><button href="#" class='delete'>Remove</button></div><hr>
         </div>
@@ -61,9 +62,8 @@ class InterfaceUser {
 
   static deleteBook(element) {
     if (element.classList.contains('delete')) {
-      var catchaName = element.parentElement.parentElement.className;
-      catchaName = catchaName.split(' ');
-      catchaName = catchaName[1];
+      let catchaName = element.parentElement.parentElement.className;
+      catchaName = catchaName.split(' ')[1];
       let compareName = catchaName;
       let getLocalStorage = JSON.parse(localStorage.getItem('List'));
 
