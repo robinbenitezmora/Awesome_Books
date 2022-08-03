@@ -14,22 +14,54 @@ This project is a basic website that allows users to add and delete books from a
 - GitHub
 
 
-### Install
-Feel free to clone the repository at this URL: https://github.com/robinbenitezmora/Awesome_Books
+## Getting Started
 
-Any suggestion is welcome.
+If you want to clone this project:
+- Go to GitHub repository
+- Click on the green button that say 'Code'
+- Copy the SSH link
+- On your local machine, type the command git clone and paste the SSH link
+
+
+### Prerequisites
+- Code editor
+- Knowledge in HTML
+- Knowledge in Javascript (ES6) (if you want to use the array methods)
+- Handle on local repository Git
+
+### Setup
+- Clone the repository
+- Change directory into the project folder
+- Install dependencies
+- Open project with text editor to view changes
+- Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
+
+### Install
+- No install required
+
+### Usage
+- Make changes to javascript and html files then submit pull requests
+
+### Run tests
+- You can use a live server to run the tests
+
+### Deployment
+- Run the project in your local browser to view the index.html
+
 
 ## Authors
 
- **Robin Benitez Mora and**
+👤 **Robin Benitez Mora**
 
-   **Armando Comellas**
+- GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
+- Twitter: [@Mecanico_Robin](https://twitter.com/mecanico_robin)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/robin-benitez-mora-manizales)
 
-GitHub: https://github.com/robinbenitezmora
+👤 **Armando Comellas**
 
-LinkedIn: https://www.linkedin.com/in/robin-benitez-mora-manizales/
-
-Contributions, issues, and feature requests are welcome!
+- GitHub: [@armandocomellas](https://github.com/armandocomellas1)
+- Twitter: [@armando_comellas](https://twitter.com/armando_comellas)
+- LinkedIn: [@BenOmayio](https://www.linkedin.com/in/armando-comellas-mayo-a8a8b8b6/)
 
 ## Show your support
 
