@@ -126,3 +126,14 @@ loadContact.addEventListener('click', () => {
   document.getElementById('book_list').style.display = 'none';
 });
 
+// Date
+const date = new Date();
+
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDate();
+const hour = date.getHours();
+const minute = date.getMinutes();
+const second = date.getSeconds();
+
+document.getElementById('date').innerHTML = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
