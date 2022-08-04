@@ -61,7 +61,7 @@ If you want to clone this project:
 
 - GitHub: [@armandocomellas](https://github.com/armandocomellas1)
 - Twitter: [@armando_comellas](https://twitter.com/armando_comellas)
-- LinkedIn: [@BenOmayio](https://www.linkedin.com/in/armando-comellas-mayo-a8a8b8b6/)
+- LinkedIn: [@armandoComellasd](https://www.linkedin.com/in/armando-comellas-mayo-a8a8b8b6/)
 
 ## Show your support
 
