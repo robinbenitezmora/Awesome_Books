@@ -46,8 +46,8 @@ class InterfaceUser {
   static deleteBook(e) {
   if (e.classList.contains('delete')) {
     e.parentElement.parentElement.remove();
+    }
   }
-}
 
   static clearFields() {
     document.getElementById('title').value = '';
