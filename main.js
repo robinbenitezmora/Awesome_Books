@@ -145,7 +145,6 @@ loadContact.addEventListener('click', () => {
 });
 
 // Date
-
 const date = new Date();
 const year = date.getFullYear();
 const month = date.toLocaleString('en', { month: 'long' });
