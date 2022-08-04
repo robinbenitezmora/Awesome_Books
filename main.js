@@ -90,12 +90,7 @@ class InterfaceUser {
           }
         element.parentElement.parentElement.remove();
       }
-    }
-  }
-
-  static deleteBook(e) {
-  if (e.classList.contains('delete')) {
-    e.parentElement.parentElement.remove();
+      element.parentElement.parentElement.remove();
     }
   }
 
