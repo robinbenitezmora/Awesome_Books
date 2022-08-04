@@ -1,14 +1,45 @@
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border: 2px solid #222;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(34, 30, 30);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(137, 160, 181);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul .separate {
+  height: 1.2rem;
+  width: 0.1rem;
+  background-color: #222;
 }
 
 .divide {
   width: 100px;
   height: 1px;
   background-color: #222;
-  margin-top: 20px;
-  margin-left: 630px;
   box-shadow: 5px 5px 5px #222;
 }
 
@@ -16,29 +47,42 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 3px solid #222;
 }
 
 section {
-  border-top: 2px solid #222;
-  border-left: 2px solid #222;
-  border-right: 2px solid #222;
-}
-
-#book_list {
-  border-bottom: 4px solid #222;
+  border: 0 solid #222;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 form {
-  display: flex;
+  display: none;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin: 2rem 0;
+}
+
+.title_list {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.time {
+  text-align: right;
+  font-size: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .data {
@@ -72,9 +116,71 @@ form {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  width: 15rem;
+  width: 25rem;
 }
 
 .add input {
   box-shadow: 5px 5px 5px #222;
+}
+
+.title_add_book {
+  display: none;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+#books__add {
+  display: none;
+  height: 96px;
+}
+
+#books__add .data {
+  width: 25rem;
+  height: 1.6rem;
+}
+
+.title_footer {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  height: 19px;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact p {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  font-size: 1rem;
+  font-weight: 520;
+  color: #222;
+}
+
+.footer_class {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2.5rem;
+  border: 2px solid #222;
+  margin-top: 5rem;
+  border-radius: 3px;
+  padding-left: 1.25rem;
 }
