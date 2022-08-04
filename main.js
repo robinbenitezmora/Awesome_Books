@@ -90,6 +90,7 @@ class InterfaceUser {
           }
         element.parentElement.parentElement.remove();
       }
+      element.parentElement.parentElement.remove();
     }
   }
 
@@ -142,3 +143,48 @@ function loadColor() {
 
 document.getElementById('add').addEventListener('click', loadColor);
 document.addEventListener('DOMContentLoaded', loadColor);
+
+// Library with Navigation
+const loadList = document.getElementById('list');
+loadList.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'none';
+  document.getElementById('books__add').style.display = 'none';
+  document.getElementById('book_list').style.display = 'block';
+  document.getElementsByClassName('title_list')[0].style.display = 'flex';
+  document.getElementsByClassName('unique')[0].style.display = 'flex';
+  document.getElementsByClassName('title_add_book')[0].style.display = 'none';
+  document.getElementsByClassName('title_footer')[0].style.display = 'none';
+});
+
+const addBook = document.getElementById('add-book');
+addBook.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'none';
+  document.getElementById('books__add').style.display = 'flex';
+  document.getElementById('book_list').style.display = 'none';
+  document.getElementsByClassName('title_list')[0].style.display = 'none';
+  document.getElementsByClassName('unique')[0].style.display = 'none';
+  document.getElementsByClassName('title_add_book')[0].style.display = 'flex';
+  document.getElementsByClassName('title_footer')[0].style.display = 'none';
+});
+
+const loadContact = document.getElementById('contact');
+loadContact.addEventListener('click', () => {
+  document.querySelector('.contact').style.display = 'flex';
+  document.getElementById('books__add').style.display = 'none';
+  document.getElementById('book_list').style.display = 'none';
+  document.getElementsByClassName('title_add_book')[0].style.display = 'none';
+  document.getElementsByClassName('title_list')[0].style.display = 'none';
+  document.getElementsByClassName('unique')[0].style.display = 'none';
+  document.getElementsByClassName('title_footer')[0].style.display = 'flex';
+});
+
+// Date
+const date = new Date();
+const year = date.getFullYear();
+const month = date.toLocaleString('en', { month: 'long' });
+const day = date.getDate();
+const hour = date.getHours();
+const minute = date.getMinutes();
+const second = date.getSeconds();
+
+document.getElementById('date').innerHTML = `${month} ${day} ${year}, ${hour}:${minute}:${second}`;
