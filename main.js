@@ -43,6 +43,12 @@ class InterfaceUser {
     library.appendChild(row);
   }
 
+  static deleteBook(e) {  
+  if (e.classList.contains('delete')) {
+    e.parentElement.parentElement.remove();
+  }
+}
+
   static clearFields() {
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
