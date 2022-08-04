@@ -9,23 +9,25 @@
 </head>
 <body>
   <header>
-    <h2>All Awesome Books</h2>
+    <h2 class="title_main">Awesome Books</h2>
     <nav>
       <ul>
         <li><a href="#" id="list">List</a></li>
+        <div class="separate"></div>
         <li><a href="#" id="add-book">Add Book</a></li>
+        <div class="separate"></div>
         <li><a href="#" id="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <p id="date" class="time"></p>
+  <h2 class="title_list">All awesome books</h2>
   <div class="unique">
     <section id="book_list"></section>
-    <hr class="divide">
   </div>
   <main>
+    <h2 class="title_add_book">Add a new book </h2>
     <form action="/" id="books__add">
-      <h2>Add a New Book </h2>
       <label for="title">
         <input class="data" type="text" id="title" name="title" placeholder="Title" required>
       </label>
@@ -36,9 +38,9 @@
         <input type="submit" value="Add" id="add">
       </label>
     </form>
+    <h2 class="title_footer">Contact Information</h2>
     <section class="contact">
-      <h2>Contact Information</h2>
-      <p>Do you have any question or you just want to say "Hello"<br>
+      <p>Do you have any question or you just want to say "Hello"?<br>
         You can reach out to us!</p>
       <ul>
         <li>Our e-mail books@mail.com</li>
@@ -46,8 +48,8 @@
         <li>Our address 123 Main St, New York, NY 10001</li>
       </ul>
     </section>
-    <footer>
-      Copyright ...
+    <footer class="footer_class">
+      Copyright &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
     </footer>
   </main>
   <script src="./main.js" type="module"></script>
