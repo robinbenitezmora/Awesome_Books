@@ -11,8 +11,6 @@
   },
   "extends": ["airbnb-base"],
   "rules": {
-    "no-dupe-class-members": "off",
-    "@typescript-eslint/no-dupe-class-members": ["error"],
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
