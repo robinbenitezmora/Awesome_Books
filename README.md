@@ -2,7 +2,7 @@
 # Awesome Books
 
 >
-This project is a basic website that allows users to add and delete books from a group or list using JavaScript objects, storage and arrays.
+Awesome-Book is an application designed with JavaScript, CSS, and HTML, for book lovers and avid readers. It has the ability to add books to your personal library. The app features a comprehensive search function to easily find and add books to your collection.
 
 ## Built With
 
